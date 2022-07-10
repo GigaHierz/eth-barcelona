@@ -4,7 +4,7 @@ import Naomi from '../public/assets/naomi.jpg'
 import K from '../public/assets/k.jpg'
 import Lena from '../public/assets/Lena.jpeg'
 import Angelica from '../public/assets/angelica.jpeg'
-import { keccak256 } from 'ethers/lib/utils'
+import Gomathi from '../public/assets/angelica.jpeg'
 
 export default function Team () {
   return (
@@ -82,6 +82,30 @@ export default function Team () {
             >
               <span className='bg-pink-900 rounded-full px-4 py-2'>
                 @angie_pnz
+              </span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 className='text-pink-300 text-lg'>Gomathi</h3>
+          <div className='my-2'>
+            <Image
+              src={Gomathi}
+              alt='Koji Mochizuki'
+              width={150}
+              height={150}
+              className='rounded-full'
+            />
+          </div>
+          <div>
+            <a
+              href='https://twitter.com/kjmczk'
+              rel='noopener noreferrer'
+              target='_blank'
+              className='text-blue-500 hover:text-blue-400'
+            >
+              <span className='bg-pink-900 rounded-full px-4 py-2'>
+                @GigaHierz
               </span>
             </a>
           </div>

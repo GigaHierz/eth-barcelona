@@ -1,8 +1,10 @@
+#NEON Labs deployment outputs
+
 https://neonscan.org/tx/0x5d590b93fe632109971f10aab3b75aecf450720527787bc4793c22dfcf6cedfb
 
-Proof of Meditation contract:  
+Proof of Meditation contract:
 
-Data: 
+Data:
 TRANSACTION DETAILS
 Details
 Tx hash  
@@ -37,12 +39,9 @@ Gas used
 Nonce  
 0x0
 
-Membership Contract: 
-
+Membership Contract:
 
 https://neonscan.org/tx/0x2a8c67a738baed078e639c6977538cc22ec12b2946768a63d4a4a434f8af978d
-
-
 
 Data: TRANSACTION DETAILS
 Details
