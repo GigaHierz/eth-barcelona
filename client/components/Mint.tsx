@@ -190,28 +190,10 @@ export default function Mint () {
   }
 
   return (
-    <>
+    <div className='bg-yellow-100'>
       <h2 className='text-4xl mb-8'>Mint</h2>
 
-      <div className='border border-t-red-300 border-r-blue-300 border-b-green-300 border-l-yellow-300 rounded p-8'>
-        <div className='flex justify-around border-b border-pink-700 pb-8'>
-          <div className='space-y-1'>
-            <div className='text-pink-400'>Supply:</div>
-            <div className='text-lg sm:text-2xl'>
-              <span className='text-pink-500'>{totalSupply}</span> / {maxSupply}
-            </div>
-          </div>
-
-          <div className='space-y-1'>
-            <div className='text-pink-400'>Sale:</div>
-            <div className='text-lg sm:text-2xl'>
-              {saleState === 0 && 'Closed'}
-              {saleState === 1 && 'Allowlist Only'}
-              {saleState === 2 && 'Public Open'}
-            </div>
-          </div>
-        </div>
-
+      <div className='bg-yellow-100 border border-t-red-300 border-r-blue-300 border-b-green-300 border-l-yellow-300 rounded p-8'>
         {saleState === 0 || (saleState === 1 && !isAllowlisted) ? (
           <div className='mt-8'>
             <Icon fill='#fff' size={64} svg='lockClosed' />
@@ -299,6 +281,6 @@ export default function Mint () {
             </div>
           )}
       </div>
-    </>
+    </div>
   )
 }

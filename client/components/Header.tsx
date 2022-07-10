@@ -4,7 +4,7 @@ import { ConnectButton, Icon } from 'web3uikit'
 
 import Container from './Container'
 import NextLink from './NextLink'
-import Logo from '../public/assets/logo1.jpg'
+import Logo from '../public/assets/logo2.jpg'
 import contractConfig from '../config/contract-config.json'
 import { parseChainId, getContractAddress } from '../utils/chain'
 import styles from '../styles/styling.module.scss'
@@ -16,12 +16,12 @@ export default function Header () {
 
   return (
     <div className='sticky top-0 z-50'>
-      <header className={styles.header}>
+      <header className='bg-yellow-200 border-b py-4'>
         <Container>
           <div className='flex justify-between items-center'>
             <NextLink href='/' className='text-2xl font-bold text-white'>
               <span className='flex items-center'>
-                <Image src={Logo} alt={nftName} width={180} height={40} />
+                <Image src={Logo} alt={nftName} width={100} height={60} />
               </span>
             </NextLink>
 
@@ -32,7 +32,7 @@ export default function Header () {
                   aria-label={`${nftName} on Discord`}
                   rel='noopener noreferrer'
                   target='_blank'
-                  className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
+                  className='bg-yellow-700 hover:bg-yellow-600 rounded-full p-2'
                 >
                   <Icon fill='#fff' svg='discord' />
                 </a>
@@ -41,7 +41,7 @@ export default function Header () {
                   aria-label={`${nftName} on Twitter`}
                   rel='noopener noreferrer'
                   target='_blank'
-                  className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
+                  className='bg-yellow-700 hover:bg-yellow-600 rounded-full p-2'
                 >
                   <Icon fill='#fff' svg='twitter' />
                 </a>
@@ -55,7 +55,7 @@ export default function Header () {
                   aria-label={`Contract of ${nftName}`}
                   rel='noopener noreferrer'
                   target='_blank'
-                  className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
+                  className='bg-yellow-700 hover:bg-yellow-600 rounded-full p-2'
                 >
                   <Icon fill='#fff' svg='eth' />
                 </a>

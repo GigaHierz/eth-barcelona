@@ -8,7 +8,7 @@ import Mint from '../components/Mint'
 import Faq from '../components/Faq'
 import Team from '../components/Team'
 import Roadmap from '../components/Roadmap'
-import topImage from '../public/assets/1920x600.png'
+import topImage from '../public/assets/banner1.jpg'
 import contractConfig from '../config/contract-config.json'
 
 const Home: NextPage = () => {
@@ -22,29 +22,25 @@ const Home: NextPage = () => {
 
       <Image src={topImage} alt={nftName} />
 
-      <div className='bg-pink-800 py-16'>
+      <div className='bg-yellow-400 py-16'>
         <Prose>
           <h1 className='text-5xl font-bold mb-4'>{nftName}</h1>
 
           <p className='text-xl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Meditation Farming is an App to increase the wellbeing of our
+            community through incentivising people and whole communities to
+            meditate.
           </p>
         </Prose>
       </div>
 
-      <div className='py-16'>
+      <div className='py-16 bg-yellow-100'>
         <Prose>
           <Mint />
         </Prose>
       </div>
 
-      <div className='bg-pink-800 py-16'>
+      {/* <div className='bg-pink-800 py-16'>
         <Prose>
           <Faq />
         </Prose>
@@ -54,7 +50,7 @@ const Home: NextPage = () => {
         <Prose>
           <Roadmap />
         </Prose>
-      </div>
+      </div> */}
 
       <div className='bg-pink-800 py-16'>
         <Prose>

@@ -23,8 +23,8 @@ contract MeditationCertificate is
     /*
      * Modifiers
      */
-    modifier userDoesntExists(address user) {
-        require(!_userExists[user], "User already  exists");
+    modifier notFinishedTheDay(address user) {
+        require(!_dateToUser[user], "User already  meditated");
         _;
     }
 
@@ -34,7 +34,7 @@ contract MeditationCertificate is
         address to,
         string memory _uri,
         uint256 _date
-    ) public {
+    ) public notFinishedTheDay(to) {
         _dateToUser[to] = _date;
         safeMint((to), _uri);
     }
@@ -48,7 +48,7 @@ contract MeditationCertificate is
 
     function snapshot() public onlyOwner {
         // should be executed daily
-        _snapshot();
+        // _snapshot();
     }
 
     function distribute() public onlyOwner {

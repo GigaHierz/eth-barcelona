@@ -13,7 +13,7 @@ export default function Footer () {
   const contractAddress = getContractAddress(chainIdHex)
 
   return (
-    <footer className='border-t'>
+    <footer className='border-t bg-yellow-200'>
       <Container>
         <div className='flex flex-col-reverse sm:flex-row justify-between items-center py-16'>
           <div>
@@ -22,20 +22,11 @@ export default function Footer () {
 
           <div className='flex items-center space-x-2 mb-8 sm:mb-0'>
             <a
-              href={process.env.NEXT_PUBLIC_OPENSEA_COLLECTION_URL}
-              aria-label={`${nftName} on OpenSea`}
-              rel='noopener noreferrer'
-              target='_blank'
-              className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
-            >
-              <Icon fill='#fff' svg='cart' />
-            </a>
-            <a
               href={process.env.NEXT_PUBLIC_DISCORD_URL}
               aria-label={`${nftName} on Discord`}
               rel='noopener noreferrer'
               target='_blank'
-              className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
+              className='bg-yellow-700 hover:bg-yellow-600 rounded-full p-2'
             >
               <Icon fill='#fff' svg='discord' />
             </a>
@@ -44,7 +35,7 @@ export default function Footer () {
               aria-label={`${nftName} on Twitter`}
               rel='noopener noreferrer'
               target='_blank'
-              className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
+              className='bg-yellow-700 hover:bg-yellow-600 rounded-full p-2'
             >
               <Icon fill='#fff' svg='twitter' />
             </a>
@@ -58,7 +49,7 @@ export default function Footer () {
               aria-label={`Contract of ${nftName}`}
               rel='noopener noreferrer'
               target='_blank'
-              className='bg-pink-700 hover:bg-pink-600 rounded-full p-2'
+              className='bg-yellow-400 hover:bg-yellow-600 rounded-full p-2'
             >
               <Icon fill='#fff' svg='eth' />
             </a>

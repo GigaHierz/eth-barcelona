@@ -1,7 +1,7 @@
 type Props = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
-export default function Prose({ children }: Props) {
-  return <div className="max-w-prose mx-auto px-4">{children}</div>;
+export default function Prose ({ children }: Props) {
+  return <div className='max-w-prose mx-auto px-4'>{children}</div>
 }
