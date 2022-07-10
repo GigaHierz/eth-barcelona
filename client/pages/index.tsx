@@ -5,6 +5,7 @@ import { NextPage } from 'next'
 import Layout from '../components/Layout'
 import Prose from '../components/Prose'
 import Mint from '../components/Mint'
+import Meditate from '../components/Meditate'
 import Faq from '../components/Faq'
 import Team from '../components/Team'
 import Roadmap from '../components/Roadmap'
@@ -37,6 +38,12 @@ const Home: NextPage = () => {
       <div className='py-16 bg-yellow-100'>
         <Prose>
           <Mint />
+        </Prose>
+      </div>
+
+      <div className='py-16 bg-yellow-100'>
+        <Prose>
+          <Meditate />
         </Prose>
       </div>
 

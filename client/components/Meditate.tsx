@@ -17,7 +17,7 @@ type CustomErrors = {
   [key: string]: string
 }
 
-export default function Mint () {
+export default function Meditate () {
   const { maxSupply, saleType, gasToken, customErrors } = contractConfig
 
   const { isWeb3Enabled, account, chainId: chainIdHex } = useMoralis()
@@ -190,97 +190,14 @@ export default function Mint () {
   }
 
   return (
-    <div className='bg-yellow-100'>
-      <h2 className='text-4xl mb-8'>Mint</h2>
-
-      <div className='bg-yellow-100 border border-t-red-300 border-r-blue-300 border-b-green-300 border-l-yellow-300 rounded p-8'>
-        {saleState === 0 || (saleState === 1 && !isAllowlisted) ? (
-          <div className='mt-8'>
-            <Icon fill='#fff' size={64} svg='lockClosed' />
-          </div>
-        ) : (
-          <div className='pt-8 space-y-4'>
-            <div className='flex justify-center items-center space-x-8'>
-              <button
-                type='button'
-                className={`rounded-full p-2 ${
-                  mintAmount <= 1 ? 'bg-pink-800 cursor-default' : 'bg-pink-600'
-                }`}
-                onClick={decrementMintAmount}
-              >
-                <Icon fill='#fff' svg='minus' />
-              </button>
-
-              <span className='text-xl'>{mintAmount}</span>
-
-              <button
-                type='button'
-                className={`rounded-full p-2 ${
-                  mintAmount >= maxMintAmountPerTx
-                    ? 'bg-pink-800 cursor-default'
-                    : 'bg-pink-600'
-                }`}
-                onClick={incrementMintAmount}
-              >
-                <Icon fill='#fff' svg='plus' />
-              </button>
-            </div>
-
-            <div className='text-center text-lg'>
-              <span className='text-pink-400'>Total Price:</span>{' '}
-              {utils.formatEther(mintPrice.mul(mintAmount))} {gasToken}
-            </div>
-
-            <div>
-              {isFetchingAM || isLoadingAM || isFetchingPM || isLoadingPM ? (
-                <button
-                  type='button'
-                  className='flex justify-center rounded px-4 py-2 w-full bg-blue-800 cursor-not-allowed'
-                  disabled
-                >
-                  <Loading size={24} spinnerColor='#fff' />
-                </button>
-              ) : (
-                <button
-                  type='button'
-                  className={`rounded px-4 py-2 font-bold w-full ${
-                    !isWeb3Enabled || !isChainIdIncluded
-                      ? 'bg-pink-700 cursor-not-allowed'
-                      : 'bg-blue-700 hover:bg-blue-600'
-                  }`}
-                  disabled={!isWeb3Enabled || !isChainIdIncluded}
-                  onClick={mint}
-                >
-                  Mint
-                </button>
-              )}
-            </div>
-          </div>
-        )}
-        {!isWeb3Enabled && (
-          <div className='text-red-500 text-center mt-4'>
-            Not connected to your wallet!
-          </div>
-        )}
-        {isWeb3Enabled && !isChainIdIncluded && (
-          <div className='text-red-500 text-center mt-4'>
-            Switch to {process.env.NEXT_PUBLIC_NETWORK_NAME}
-          </div>
-        )}
-        {isWeb3Enabled && isChainIdIncluded && saleState === 0 && (
-          <div className='text-red-500 text-center mt-4'>
-            Sales are closed now.
-          </div>
-        )}
-        {isWeb3Enabled &&
-          isChainIdIncluded &&
-          saleState === 1 &&
-          !isAllowlisted && (
-            <div className='text-red-500 text-center mt-4'>
-              Address is not allowlisted.
-            </div>
-          )}
-      </div>
+    <div className='bg-yellow-100 d-flex justify-content-center'>
+      <button
+        type='button'
+        className={`rounded-full p-2 ${'bg-pink-800 cursor-default'}`}
+        onClick={decrementMintAmount}
+      >
+        Start Meditating
+      </button>
     </div>
   )
 }
