@@ -24,7 +24,8 @@ contract MeditationCertificate is
      * Modifiers
      */
     modifier notFinishedTheDay(address user) {
-        require(!_dateToUser[user], "User already  meditated");
+        // people only should get one token per day
+        // require(!_dateToUser[user], "User already  meditated");
         _;
     }
 

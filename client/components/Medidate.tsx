@@ -191,11 +191,7 @@ export default function Mint () {
 
   return (
     <div className='bg-yellow-100'>
-      <h2 className='text-4xl mb-8'>Mint your Membership token</h2>
-      <h3 className='text-2xl mb-8'>
-        Get your Soulbound MemberShip NFT that gets more meditative, the more
-        you meditate
-      </h3>
+      <h2 className='text-4xl mb-8'>Mint</h2>
 
       <div className='bg-yellow-100 border border-t-red-300 border-r-blue-300 border-b-green-300 border-l-yellow-300 rounded p-8'>
         {saleState === 0 || (saleState === 1 && !isAllowlisted) ? (

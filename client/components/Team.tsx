@@ -1,8 +1,10 @@
 import Image from 'next/image'
 
-import Creator from '../public/assets/creator.png'
-import Developer from '../public/assets/developer.png'
-import Marketer from '../public/assets/marketer.png'
+import Naomi from '../public/assets/naomi.jpg'
+import K from '../public/assets/k.jpg'
+import Lena from '../public/assets/Lena.jpeg'
+import Angelica from '../public/assets/angelica.jpeg'
+import { keccak256 } from 'ethers/lib/utils'
 
 export default function Team () {
   return (
@@ -14,7 +16,7 @@ export default function Team () {
           <h3 className='text-pink-300 text-lg'>Naomi</h3>
           <div className='my-2'>
             <Image
-              src={Creator}
+              src={Naomi}
               alt='Naomi'
               width={150}
               height={150}
@@ -39,7 +41,7 @@ export default function Team () {
           <h3 className='text-pink-300 text-lg'>K</h3>
           <div className='my-2'>
             <Image
-              src={Developer}
+              src={K}
               alt='Koji Mochizuki'
               width={150}
               height={150}
@@ -64,7 +66,7 @@ export default function Team () {
           <h3 className='text-pink-300 text-lg'>Angelica</h3>
           <div className='my-2'>
             <Image
-              src={Marketer}
+              src={Angelica}
               alt='Koji Mochizuki'
               width={150}
               height={150}
@@ -88,7 +90,7 @@ export default function Team () {
           <h3 className='text-pink-300 text-lg'>Lena</h3>
           <div className='my-2'>
             <Image
-              src={Marketer}
+              src={Lena}
               alt='Koji Mochizuki'
               width={150}
               height={150}
