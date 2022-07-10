@@ -1,4 +1,4 @@
-# MEditation Farming
+# Meditation Farming
 
 Meditation Farming is an App to increase the wellbeing of our community through incentivising people and whole communities to meditate.
 
@@ -46,7 +46,7 @@ skip it.
 
 ## Challenges
 
-Challenge #1 - Powered by Neon Labs
-Challenge #2 - Powered by Ripio and IOTX
-Challenge #3 - Powered by 1inch
-Challenge #4 - Our Public Goods Challenge powered by AUT protocol
+- Challenge #1 - Powered by Neon Labs - deployed with Remix - https://github.com/GigaHierz/eth-barcelona/blob/main/contracts/NEON-Deployed.md
+- Challenge #2 - Powered by Ripio and IOTX
+- Challenge #3 - Powered by 1inch
+- Challenge #4 - Our Public Goods Challenge powered by AUT protocol
