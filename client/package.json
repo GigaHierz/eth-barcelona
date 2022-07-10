@@ -1,0 +1,8 @@
+{
+  "name": "eth-barcelona",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "repository": "git@github.com:GigaHierz/eth-barcelona.git",
+  "author": "Naomi Schettini <naomischettini@gmail.com>",
+  "license": "MIT"
+}
