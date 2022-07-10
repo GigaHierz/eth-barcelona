@@ -1,4 +1,12 @@
 {
+<<<<<<< HEAD
+  "name": "eth-barcelona",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "repository": "git@github.com:GigaHierz/eth-barcelona.git",
+  "author": "Naomi Schettini <naomischettini@gmail.com>",
+  "license": "MIT"
+=======
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -60,4 +68,5 @@
       "last 1 safari version"
     ]
   }
+>>>>>>> 560b7d51fa2ad7ee266ab835e55409d5a6f36a3c
 }
