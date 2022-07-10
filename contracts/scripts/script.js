@@ -31,7 +31,10 @@ async function main () {
 
   await meditationCertificate.deployed()
 
-  console.log('Membership deployed to:', meditationCertificate.address)
+  console.log(
+    'MeditationCertificate deployed to:',
+    meditationCertificate.address
+  )
 }
 
 // We recommend this pattern to be able to use async/await everywhere

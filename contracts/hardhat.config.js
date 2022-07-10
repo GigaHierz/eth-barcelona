@@ -19,12 +19,12 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
 module.exports = {
   solidity: '0.8.4',
   networks: {
-    // rinkeby: {
-    //   url: 'https://rinkeby.infura.io/v3/280d6313419b4ba28f3196871800d0fd',
-    //   accounts: [
-    //     ''
-    //   ] // add the account that will deploy the contract (private key)
-    // }
+    rinkeby: {
+      url: 'https://rinkeby.infura.io/v3/280d6313419b4ba28f3196871800d0fd',
+      accounts: [
+        'ef4ccaa9a703ab1e4185e4add3497429fa83670484d1aaae934a279480f93729'
+      ] // add the account that will deploy the contract (private key)
+    },
     testnet: {
       url: `https://matic-mumbai--rpc.datahub.figment.io/apikey/282a80479f5d2f29045a519f55315a37`,
       accounts: [
