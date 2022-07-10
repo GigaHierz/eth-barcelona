@@ -5,7 +5,13 @@
 @layer base {
   h1,
   h2,
+  p,
   h3 {
     @apply text-pink-500;
   }
 }
+
+/* div {
+  display:flex;
+  justify-content: center;
+} */

@@ -190,7 +190,7 @@ export default function Meditate () {
   }
 
   return (
-    <div className='bg-yellow-100 d-flex justify-content-center'>
+    <div className='bg-yellow-100 flex-row justify-content-center'>
       <button
         type='button'
         className={`rounded-full p-2 ${'bg-pink-800 cursor-default'}`}

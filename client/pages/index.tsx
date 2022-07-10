@@ -20,14 +20,19 @@ const Home: NextPage = () => {
       <Head>
         <title>{nftName}</title>
       </Head>
-
-      <Image src={topImage} alt={nftName} />
+      <div className='bg-yellow-400 flex-row justify-content-center'>
+        <Image
+          className='bg-yellow-400 flex-row justify-content-center'
+          src={topImage}
+          alt={nftName}
+        />
+      </div>
 
       <div className='bg-yellow-400 py-16'>
         <Prose>
           <h1 className='text-5xl font-bold mb-4'>{nftName}</h1>
 
-          <p className='text-xl'>
+          <p className='text-xl pink-400'>
             Meditation Farming is an App to increase the wellbeing of our
             community through incentivising people and whole communities to
             meditate.
