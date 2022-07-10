@@ -8,7 +8,7 @@
     "publicSale": { "mintPrice": "0.07", "maxMintAmountPerTx": "10" }
   },
   "contractAddresses": {
-    "1337": [],
+    "1337": ["0x5F78a11fC86691b87E77cB651E089C2A2aA84AF3"],
     "4": [],
     "1": []
   },
