@@ -7,6 +7,7 @@ import NextLink from './NextLink'
 import Logo from '../public/assets/logo.jpeg'
 import contractConfig from '../config/contract-config.json'
 import { parseChainId, getContractAddress } from '../utils/chain'
+import styles from '../styles/styling.module.scss'
 
 export default function Header () {
   const { nftName } = contractConfig
@@ -15,18 +16,12 @@ export default function Header () {
 
   return (
     <div className='sticky top-0 z-50'>
-      <header className='bg-pink-100 border-b py-4'>
+      <header className={styles.header}>
         <Container>
           <div className='flex justify-between items-center'>
             <NextLink href='/' className='text-2xl font-bold text-white'>
               <span className='flex items-center'>
-                <Image
-                  src={Logo}
-                  alt={nftName}
-                  width={180}
-                  height={40}
-                  className='rounded-full'
-                />
+                <Image src={Logo} alt={nftName} width={180} height={40} />
               </span>
             </NextLink>
 
