@@ -12,17 +12,22 @@ contract MembershipNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
     mapping(uint256 => address) _tokenToUser;
-    mapping(address => uint256) _dateToUser;
+    mapping(address => bool) _userExists;
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("Meditated", "POMD") {}
+    /*
+     * Modifiers
+     */
+    modifier userDoesntExists(address user) {
+        require(!_userExists[user], "User already  exists");
+        _;
+    }
 
-    function mint(
-        address to,
-        string memory _uri,
-        uint256 _date
-    ) public {
-        _dateToUser[to] = _date;
+    constructor() ERC721("Meditation Farming", "MFT") {}
+
+    //  A user can only own one Membership NFT
+    function mint(address to, string memory _uri) public userDoesntExists(to) {
+        _userExists[to] = true;
         safeMint((to), _uri);
     }
 

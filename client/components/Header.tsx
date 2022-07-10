@@ -4,7 +4,7 @@ import { ConnectButton, Icon } from 'web3uikit'
 
 import Container from './Container'
 import NextLink from './NextLink'
-import Logo from '../public/assets/logo.jpeg'
+import Logo from '../public/assets/logo1.jpg'
 import contractConfig from '../config/contract-config.json'
 import { parseChainId, getContractAddress } from '../utils/chain'
 import styles from '../styles/styling.module.scss'

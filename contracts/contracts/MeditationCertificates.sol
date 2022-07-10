@@ -20,7 +20,7 @@ contract MeditationCertificate is
     mapping(address => uint256) _dateToUser;
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("Meditated", "POMD") {}
+    constructor() ERC721("Meditation Certificate", "MCT") {}
 
     function mint(
         address to,
