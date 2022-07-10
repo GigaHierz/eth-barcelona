@@ -20,6 +20,14 @@ contract MeditationCertificate is
     mapping(address => uint256) _dateToUser;
     Counters.Counter private _tokenIdCounter;
 
+    /*
+     * Modifiers
+     */
+    modifier userDoesntExists(address user) {
+        require(!_userExists[user], "User already  exists");
+        _;
+    }
+
     constructor() ERC721("Meditation Certificate", "MCT") {}
 
     function mint(
@@ -36,6 +44,20 @@ contract MeditationCertificate is
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
+    }
+
+    function snapshot() public onlyOwner {
+        // should be executed daily
+        _snapshot();
+    }
+
+    function distribute() public onlyOwner {
+        // at the end of the cohort this function should be executed and the pool should be distrbuted between the users based on the snapshots
+    }
+
+    function widthdraw() public onlyOwner {
+        // Members can withdraw funds after each Cohort (Month)
+        // Withdraw has 7 days? waiting period
     }
 
     function tokensOfOwner(address _owner)
